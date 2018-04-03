@@ -9,10 +9,13 @@ import {iitrLogo} from '../logo.svg';
 
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Glyphicon } from 'react-bootstrap'
 
+import './Home.css';
+
+import ButThree from './Three.js';
+import ButFour from './Four.js';
 
 
-
- class Udemy extends Component {
+ class Login extends Component {
   constructor (props, context) {
     super(props, context)
     this.state = {
@@ -56,7 +59,7 @@ class MainEventTemp extends Component {
 
        
   
-          
+           
       
     )
 
@@ -76,4 +79,119 @@ class MainEventTemp extends Component {
 
 
 
+class Udemy extends React.Component {
+  constructor(props) {
+    super(props);
+   
+  }
+
+
+  render() {
+   
+
+    return (
+      <div>
+      
+        <Greeting isLoggedIn={isLoggedIn} />
+        
+      </div>
+    );
+  }
+}
+
+function UserGreeting(props) {
+  return <h1>Welcome back!</h1>;
+}
+
+function GuestGreeting(props) {
+  return <h1>Please sign up.</h1>;
+}
+
+function Greeting(props) {
+  
+
+  
+            
+   
+}
+
+ }
+
+
 export default Udemy;
+
+
+
+// class Udemy extends Component {
+//   render() {
+//     return (
+//       <div className="container-fluid">
+//         <div className="row">
+//      <div className="col s4 m4 l4">
+//          <div className="card">
+          
+//          <div className="container">
+//          <h4><b>John Doe</b></h4> 
+//          <p>Architect & Engineer</p> 
+//          </div>
+//          </div>
+          
+//      </div>
+
+//      <div className="col s4 m4 l4">
+//          <div className="card">
+          
+//          <div className="container">
+//          <h4><b>John Doe</b></h4> 
+//          <p>Architect & Engineer</p> 
+//          </div>
+//          </div>
+//      </div>
+//      <div className="col s4 m4 l4">
+//          <div className="card">
+          
+//          <div className="container">
+//          <h4><b>John Doe</b></h4> 
+//          <p>Architect & Engineer</p> 
+//          </div>
+//          </div>
+//      </div>
+
+//         </div>
+          
+//          <div className="row">
+//      <div className="col s4 m4 l4">
+//          <div className="card">
+          
+//          <div className="container">
+//          <h4><b>John Doe</b></h4> 
+//          <p>Architect & Engineer</p> 
+//          </div>
+//          </div>
+//      </div>
+
+//      <div className="col s4 m4 l4">
+//          <div className="card">
+          
+//          <div className="container">
+//          <h4><b>John Doe</b></h4> 
+//          <p>Architect & Engineer</p> 
+//          </div>
+//          </div>
+//      </div>
+//      <div className="col s4 m4 l4">
+//          <div className="card">
+          
+//          <div className="container">
+//          <h4><b>John Doe</b></h4> 
+//          <p>Architect & Engineer</p> 
+//          </div>
+//          </div>
+//      </div>
+//         </div> 
+//     </div>
+      
+//     );
+//   }
+// }
+// export default Udemy;
