@@ -24,7 +24,7 @@ import ButFour from './Four.js';
     // this.Bplanincreasehorizontalline = this.Bplanincreasehorizontalline.bind(this);
     // this.renderclick = this.renderclick.bind(this);
   }
- 
+
   render () {
     return (
       <div>
@@ -38,7 +38,20 @@ import ButFour from './Four.js';
         </Grid>
          <Grid className='main-events-grid fluid-event-landing'>
              <Row className='main-event-row container'>
-       
+        {this.state.mappedMainEvents.map((event, key) => (
+          <div key={key}>
+            
+              <MainEventTemp
+                name={event.title}
+                short={event.tagline}
+                long={event.short_description}
+                image={event.image}                
+                websiteUrl={event.website_url}
+                end_point={event.end_point}
+                            />
+                            
+          </div>
+                ))}
         </Row>
             </Grid>
       </div>
@@ -59,7 +72,16 @@ class MainEventTemp extends Component {
 
        
   
-           
+            
+            <Col md={4} sm={4} xs={4} className="card">
+              <div className='main-event'>
+               <div>{this.props.name}</div>
+               <div>{this.props.short}</div>
+               <div>{this.props.long}</div>
+               <div>{this.props.websiteUrl}</div>
+              </div>
+            </Col>            
+         
       
     )
 
