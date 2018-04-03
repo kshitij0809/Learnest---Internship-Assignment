@@ -24,7 +24,79 @@ import ButFour from './Four.js';
     // this.Bplanincreasehorizontalline = this.Bplanincreasehorizontalline.bind(this);
     // this.renderclick = this.renderclick.bind(this);
   }
+  componentDidMount () {
+    // axios
+    //         .get(API_DOMAIN+'/api/events/?highlighted=true')
+    //         .then(response => {
+    //           // console.log(response.data)
+    //           this.setState({ mappedMainEvents: response.data })
+    //           this.Bplanincreasehorizontalline()
+    //           this.renderingviewmore()
+    //         })
+    //         .catch(error => {
+    //           console.log(error)
+    //         })  
 
+
+    this.setState({ mappedMainEvents: [{
+    title:'KSHITIJ',
+    tagline:'IIT ROORKEE STUDENT',
+    short_description:"Events are a great way to create awareness, amass knowledge and generate interest in topics while having some fun, all through the competitive spirit. The Summit brings to you a wide ",  
+    image:{iitrLogo},
+    website_url:'Kshitijpratapme.000webhostapp.com',
+    end_point:"END"
+    },
+    {
+    title:'KSHITIJ',
+    tagline:'IIT ROORKEE STUDENT',
+    short_description:"Events are a great way to create awareness, amass knowledge and generate interest in topics while having some fun, all through the competitive spirit. The Summit brings to you a wide ",  
+    image:{iitrLogo},
+    website_url:'Kshitijpratapme.000webhostapp.com',
+    end_point:"END"
+    },
+    {
+    title:'KSHITIJ',
+    tagline:'IIT ROORKEE STUDENT',
+    short_description:"Events are a great way to create awareness, amass knowledge and generate interest in topics while having some fun, all through the competitive spirit. The Summit brings to you a wide ",  
+    image:{iitrLogo},
+    website_url:'Kshitijpratapme.000webhostapp.com',
+    end_point:"END"
+    },
+    {
+    title:'KSHITIJ',
+    tagline:'IIT ROORKEE STUDENT',
+    short_description:"Events are a great way to create awareness, amass knowledge and generate interest in topics while having some fun, all through the competitive spirit. The Summit brings to you a wide ",  
+    image:{iitrLogo},
+    website_url:'Kshitijpratapme.000webhostapp.com',
+    end_point:"END"
+    },
+    {
+    title:'KSHITIJ',
+    tagline:'IIT ROORKEE STUDENT',
+    short_description:"Events are a great way to create awareness, amass knowledge and generate interest in topics while having some fun, all through the competitive spirit. The Summit brings to you a wide ",  
+    image:{iitrLogo},
+    website_url:'Kshitijpratapme.000webhostapp.com',
+    end_point:"END"
+    },
+    {
+    title:'KSHITIJ',
+    tagline:'IIT ROORKEE STUDENT',
+    short_description:"Events are a great way to create awareness, amass knowledge and generate interest in topics while having some fun, all through the competitive spirit. The Summit brings to you a wide ",  
+    image:{iitrLogo},
+    website_url:'Kshitijpratapme.000webhostapp.com',
+    end_point:"END"
+    }]});
+  }
+  // renderclick(){
+  //   window.href("")
+  // }
+ 
+  // Bplanincreasehorizontalline(){
+  //  var x = document.getElementsByClassName('main-events-grid container');
+  //    x[x.length-1].getElementsByClassName('horizontal-line-last')[0].style.maxWidth = "51vw" ;
+  //    x[x.length-1].getElementsByClassName('vl')[0].style.height = "109px";
+    
+  //  }
   render () {
     return (
       <div>
