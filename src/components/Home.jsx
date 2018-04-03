@@ -87,11 +87,35 @@ class Udemy extends React.Component {
 
 
   render() {
-   
+    const isLoggedIn = this.state.isLoggedIn;
+    
+        let buttonOne = null;
+        let buttonTwo = null;
+        let buttonThree = null;
+        let buttonFour = null;
+
+       
+
+     {
+      buttonOne = <button  className="button button1 " onClick={this.handleOneClick} > one</button>;
+    } 
+    {
+      buttonTwo = <button  className="button button2 " onClick={this.handleTwoClick}> two</button>;
+    }
+    
+     {
+      buttonThree= <button  className="button button3 " onClick={this.handleThreeClick} > Three</button>;
+    } 
+    {
+      buttonFour= <button  className="button button4 " onClick={this.handleFourClick}> Four</button>;
+    }
 
     return (
       <div>
-      
+        {buttonOne}
+        {buttonTwo}
+        {buttonThree}
+        {buttonFour}
         <Greeting isLoggedIn={isLoggedIn} />
         
       </div>
@@ -108,9 +132,20 @@ function GuestGreeting(props) {
 }
 
 function Greeting(props) {
-  
+  const isLoggedIn = props.isLoggedIn;
 
-  
+  switch(isLoggedIn) {
+    case 'one':
+        return <UserGreeting />;
+        
+    case 'two':
+        return <Login />;
+        
+    case 'three':
+        return <ButThree />;
+        
+    case 'four':
+        return <ButFour />;
             
    
 }
