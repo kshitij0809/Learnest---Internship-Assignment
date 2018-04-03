@@ -82,9 +82,26 @@ class MainEventTemp extends Component {
 class Udemy extends React.Component {
   constructor(props) {
     super(props);
-   
+    this.handleOneClick = this.handleOneClick.bind(this);
+    this.handleTwoClick = this.handleTwoClick.bind(this);
+    this.handleThreeClick = this.handleThreeClick.bind(this);
+    this.handleFourClick = this.handleFourClick.bind(this);
+    this.state = {isLoggedIn: 'one'};
   }
 
+  handleOneClick() {
+    this.setState({isLoggedIn: 'one'});
+  }
+
+  handleTwoClick() {
+    this.setState({isLoggedIn: 'two'});
+  }
+   handleThreeClick() {
+    this.setState({isLoggedIn: 'three'});
+  }
+   handleFourClick() {
+    this.setState({isLoggedIn: 'four'});
+  }
 
   render() {
     const isLoggedIn = this.state.isLoggedIn;
